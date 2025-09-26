@@ -7,6 +7,10 @@ on:
     branches: ["main"] # También se activa con cada Pull Request
   workflow_dispatch: # Permite ejecución manual
 
+concurrency:
+  group: 'CI-CD-GHPages'
+  cancel-in-progress: true
+
 jobs:
   # Job 1: Verificación de Código (LINTING BÁSICO)
   verificar_codigo:
