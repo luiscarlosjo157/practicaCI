@@ -1,0 +1,16 @@
+name: prueba CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  hola_mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: saludar
+        run: echo "Hola, Mundo"
+       
