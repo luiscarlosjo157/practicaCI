@@ -1,5 +1,4 @@
 name: prueba CI
-
 on:
   push:
     branches: ["main"]
