@@ -2,11 +2,9 @@ name: prueba CI
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
   pull_request:
-    branches:
-      - main
+    branches: ["main"]
 jobs:
   hola_mundo:
     runs-on: ubuntu-latest
